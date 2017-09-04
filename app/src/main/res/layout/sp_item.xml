@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_user"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/sp_userImg"
+                android:src="@drawable/person_outline"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/sp_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/blackLine"
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:layout_toEndOf="@+id/rel_user"/>
+
+        <RelativeLayout
+            android:id="@+id/rel_spInfo"
+            android:layout_toEndOf="@+id/rel_user"
+            android:layout_toStartOf="@+id/rel_delete"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/sp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="20dp"
+                android:text="求购名"/>
+
+            <TextView
+                android:id="@+id/sp_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:text="描述"/>
+
+            <TextView
+                android:id="@+id/sp_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/sp_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布于"
+                android:textSize="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_delete"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_de_false"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

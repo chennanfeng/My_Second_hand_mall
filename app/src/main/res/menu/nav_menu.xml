@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+        android:id="@+id/classify"
+        android:icon="@drawable/classify"
+        android:title="分类"/>
+        <item
+            android:id="@+id/buy"
+            android:icon="@drawable/buy"
+            android:title="我要买"/>
+        <item
+            android:id="@+id/sale"
+            android:icon="@drawable/sale"
+            android:title="我要卖"/>
+        <item
+            android:id="@+id/put_out"
+            android:icon="@drawable/put_out"
+            android:title="已上架物品"/>
+        <item
+            android:id="@+id/put_in"
+            android:icon="@drawable/put_in"
+            android:title="已发布需求"/>
+        <!--<item-->
+            <!--android:id="@+id/heart"-->
+            <!--android:icon="@drawable/heart"-->
+            <!--android:title="收藏"/>-->
+        <!--<item-->
+            <!--android:id="@+id/set"-->
+            <!--android:icon="@drawable/set_person"-->
+            <!--android:title="设置"/>-->
+    </group>
+
+</menu>

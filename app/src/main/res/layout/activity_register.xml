@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/activity_signin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/edit_describe"
+            android:maxLength="10"
+            android:hint="确认密码" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_above="@+id/edit_describe"
+            android:layout_alignEnd="@+id/edit_describe"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/edit_price"
+            android:maxLength="10"
+            android:hint="输入密码"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_above="@+id/edit_price"
+            android:layout_alignEnd="@+id/edit_price"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/edit_name"
+            android:maxLength="11"
+            android:hint="请输入帐号" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@+id/edit_describe"
+            android:layout_alignEnd="@+id/edit_describe"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edit_phone"
+            android:hint="请输入手机号"
+            android:inputType="phone" />
+
+
+        <Button
+            android:text="重置"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_register"
+            android:layout_alignEnd="@+id/edit_phone"
+            android:id="@+id/btn_reset" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/add_pro"
+            android:layout_above="@+id/edit_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/img_addimg" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_phone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sp_problem"
+            android:layout_alignStart="@+id/btn_register"
+            android:layout_alignEnd="@+id/btn_reset"
+            android:entries="@array/problem"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edit_answer"
+            android:layout_below="@+id/sp_problem"
+            android:layout_alignEnd="@+id/sp_problem"
+            android:maxLength="10"
+            android:hint="请选择问题并填写答案" />
+
+        <Button
+            android:text="注册"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_register"
+            android:layout_below="@+id/edit_answer"
+            android:layout_alignStart="@+id/edit_phone"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布商品"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/add_pro"
+                android:id="@+id/img" />
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_above="@+id/edit_describe"
+                android:layout_alignStart="@+id/edit_describe"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/edit_price"
+                android:hint="请输入价格"
+                android:maxLength="5"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_above="@+id/edit_price"
+                android:layout_alignStart="@+id/edit_price"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/edit_name"
+                android:hint="请输入商品名称"
+                android:maxLength="10"
+                android:inputType="text" />
+
+
+
+            <Button
+                android:text="发布"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_fabu"
+                android:layout_below="@+id/sp_classify"
+                android:layout_alignStart="@+id/sp_classify"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:text="重置"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_reset"
+                android:layout_alignBaseline="@+id/btn_fabu"
+                android:layout_alignBottom="@+id/btn_fabu"
+                android:layout_alignEnd="@+id/edit_price"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:hint="请输入商品的描述，最多120个字"
+                android:gravity="left|top"
+                android:lines="3"
+                android:maxLength="120"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/edit_describe" />
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/search"
+                android:id="@+id/sp_ca"
+                android:layout_below="@+id/edit_describe"
+                android:layout_alignStart="@+id/edit_describe"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/sp_classify"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/classify1"
+                android:layout_below="@+id/sp_ca"
+                android:layout_alignStart="@+id/sp_ca"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

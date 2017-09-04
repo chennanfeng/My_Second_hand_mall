@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search">
+        <item>电器</item>
+        <item>书籍</item>
+        <item>运动</item>
+        <item>生活</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="classify1">
+        <item>电脑</item>
+        <item>手机</item>
+        <item>电视</item>
+        <item>冰箱</item>
+        <item>洗衣机</item>
+        <item>空调</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="classify2">
+        <item>政治</item>
+        <item>历史</item>
+        <item>计算机</item>
+        <item>科学</item>
+        <item>数学</item>
+        <item>物理</item>
+        <item>化学</item>
+        <item>小说</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="classify3">
+        <item>球类</item>
+        <item>健身类</item>
+        <item>游泳</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="classify4">
+        <item>衣服</item>
+        <item>鞋子</item>
+        <item>洗衣用品</item>
+        <item>床上用品</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="classify5">
+        <item>其他</item>
+    </string-array>
+</resources>
